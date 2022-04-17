@@ -1,0 +1,468 @@
+/*--------------------PAGE STUDIO-------------------------*/
+
+:root {
+    --title-text-color: #212121 ;
+    --primary-text-color: #757575;
+    --logo-text-color: #FFFFFF;
+    --acent-color:#2196F3;
+    --header-logo:#000000;
+    --background-color: #2F303A;
+}
+
+body {
+font-family: 'Roboto', sans-serif;
+font-size: 14px;
+letter-spacing: 0.03em;
+color: var(--title-text-color);
+background-color:var(--logo-text-color);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.list {
+list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+    /* outline: solid 1px tomato; */
+}
+
+/* ---------------------------HEADER---------------------- */
+
+.header .container {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header-nav {
+    display: flex;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--header-logo);
+}
+
+.header-list {
+display: flex;
+margin-left: 93px;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+}
+
+.header-list .header-item:not(:last-child) {
+margin-right: 50px;
+}
+
+.header-list .link {
+display: block;
+padding-top: 32px;
+padding-bottom: 32px;
+}
+
+.header-item a:hover,
+.header-item a:focus {
+   color: var(--acent-color);
+}
+
+.current {
+    color: var(--acent-color);
+}
+
+.header-contact {
+    display: flex;
+    margin-left: auto;
+}
+
+.header-contact li:not(:last-child) {
+    margin-right: 50px;
+}
+
+.header-mail {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+color: var(--primary-text-color);
+}
+
+.header-tel {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+color: var(--primary-text-color);
+}
+
+/* --------------------------HERO ---------------------------*/
+
+.hero {
+    background-color: var(--background-color);
+    text-align: center;
+    padding: 200px 0px 200px 0px;
+}
+
+
+.hero-text {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    color: var(--logo-text-color);
+    
+}
+.btn {
+    width: 200px;
+    height: 50px;
+}
+
+.text-btn {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    background-color: var(--acent-color);
+    cursor: pointer;
+}
+
+.text-btn:hover,
+.text-btn:focus {
+    background-color: #188CE8;
+}
+
+/* --------------------------ПРЕИМУЩЕСТВА ---------------------------*/
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.advantage {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.advantage-list {
+    display: flex;
+}
+
+.advantage-item {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+}
+
+.advantage-list li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.advantage-text {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+
+/*--------------ЧЕМ МЫ ЗАНИМАЕМСЯ-----------------*/
+
+.doing {
+    
+    padding-bottom: 94px;
+}
+
+.doing-title {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+
+.doing-img {
+    display: flex;
+}
+
+.doing-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+/*--------------НАША КОМАНДА-----------------*/
+.team {
+    background-color: #F5F4FA;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.team-title {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+
+.team-worker {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+
+.team-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+
+/*--------------------НАША КОМАНДА CARD SET--------------*/
+
+.card-set {
+    display: flex;
+    text-align: center;
+}
+
+.card-item {
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+img {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.card-set .card-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.team-worker {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.team-text {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+/*--------------FOOTER-----------------*/
+
+.footer {
+    background-color: var(--background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-logo {
+font-family: 'Raleway', sans-serif;
+font-weight: 700;
+font-size: 26px;
+line-height: 1.2;
+letter-spacing: 0.03em;
+color: var(--logo-text-color);
+display: block;
+margin-bottom: 20px;
+}
+
+.footer-adress {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--logo-text-color);
+}
+
+.footer-street {
+    display: block;
+    margin-bottom: 9px;
+}
+
+.footer-mail {
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
+display: block;
+margin-bottom: 9px;
+}
+
+.footer-tel {
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
+display: block;
+}
+
+
+/*----------------------PAGE PORTFOLIO----------------*/
+
+
+
+.visually-hidden {
+    display: block;
+}
+
+.portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    margin: 0 auto;
+}
+
+.filter-portfolio {
+    display: flex;
+    justify-content:center;
+    margin-bottom: 50px;
+
+}
+
+.filter-portfolio .filter-item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.btn-portfolio {
+    padding: 6px 22px;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+    background-color: #F5F4FA;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.btn-portfolio:hover,
+.btn-portfolio:focus {
+background-color:  #2196F3;
+}
+
+.text-bt-portfolio {
+font-family: inherit;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
+letter-spacing: 0.03em;
+color: var(--title-text-color);
+}
+
+.text-btn-portfolio:hover,
+.text-btn-portfolio:focus {
+    color: var(--logo-text-color);
+}
+
+/*-----------------CARDS---------------- */
+
+.portfolio-set {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-card {
+width: 370px;
+margin-right: 30px;
+margin-bottom: 30px;
+background: #FFFFFF;
+border: 1px solid #EEEEEE;
+box-sizing: border-box;
+}
+
+.portfolio-card:nth-child(3n) {
+    margin-right: 0;
+}
+
+.portfolio-title {
+    padding-left: 24px;
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--title-text-color);
+}
+
+.portfolio-text {
+    padding-left: 24px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
